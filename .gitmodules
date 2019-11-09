@@ -7,3 +7,6 @@
 [submodule "rcutils"]
 	path = rcutils
 	url = https://github.com/ros2/rcutils.git
+[submodule "rosidl"]
+	path = rosidl
+	url = https://github.com/ros2/rosidl.git
