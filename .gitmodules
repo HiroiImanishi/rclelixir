@@ -1,0 +1,24 @@
+[submodule "rcl_dashing"]
+	path = rcl
+	url = https://github.com/ros2/rcl.git
+	branch = dashing
+[submodule "rmw_dashing"]
+	path = rmw
+	url = https://github.com/ros2/rmw.git
+	branch = dashing
+[submodule "rcutils_dashing"]
+	path = rcutils
+	url = https://github.com/ros2/rcutils.git
+	branch = dashing
+[submodule "rosidl_dashing"]
+	path = rosidl
+	url = https://github.com/ros2/rosidl.git
+	branch = dashing
+[submodule "rmw_fastrtps"]
+	path = rmw_fastrtps
+	url = https://github.com/ros2/rmw_fastrtps.git
+	branch = dashing
+[submodule "rcl_interfaces"]
+	path = rcl_interfaces
+	url = https://github.com/ros2/rcl_interfaces.git
+	branch = dashing

@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "validate_node_name.h": "c",
+        "node.h": "c",
+        "init.h": "c",
+        "logging.h": "c",
+        "common.h": "c",
+        "init_options.h": "c",
+        "logging_macros.h": "c"
+    }
+}

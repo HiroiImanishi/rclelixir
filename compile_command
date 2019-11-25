@@ -1,0 +1,23 @@
+rclelixirでの共有ライブラリ作成コマンド
+
+
+必要な関数
+
+...
+rcl_get_zero_initialized_init_options
+rcutils_set_error_state
+rcl_get_zero_initialized_context
+rcl_arguments_fini
+g_rcutils_logging_initialized
+rcutils_time_point_value_as_seconds_string
+rcutils_string_map_init
+rcutils_reallocf
+rcl_lexer_lookahead2_init
+rcutils_char_array_strncat
+rcutils_strdup
+rcutils_system_time_now
+rmw_context_fini
+
+
+コマンド
+  gcc -O3 -fpic -shared -I /usr/lib/erlang/erts-10.5.2/include -I ../../include -I ../../../../rcutils/include -I ../../../../rmw/rmw/include -I ../../../../rosidl/rosidl_generator_c/include -I ../../../../rosidl/rosidl_typesupport_interface/include -I ../../../../rmw_fastrtps/rmw_fastrtps_cpp/include -o ../lib/init.so init_nif.c ../../src/rcl/init_options.c ../../../../rcutils/src/error_handling.c ../../src/rcl/context.c ../../src/rcl/arguments.c ../../../../rcutils/src/logging.c ../../../../rcutils/src/time.c ../../../../rcutils/src/string_map.c ../../../../rcutils/src/allocator.c ../../src/rcl/lexer_lookahead.c ../../../../rcutils/src/char_array.c ../../../../rcutils/src/strdup.c ../../../../rcutils/src/time_unix.c
