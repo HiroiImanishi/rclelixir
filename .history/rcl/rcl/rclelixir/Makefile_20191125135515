@@ -1,0 +1,14 @@
+CC		= gcc
+TARGET	= init.so
+DEST	= ./lib/
+ROOTDIR = ../../../
+SRCDIR	= ./nif_src/
+
+CFLAGS  = -O3 -fpic -shared
+
+INCD	= -I.
+
+all:	$(TARGET)
+
+$(TARGET): $(OBJS) $(SRCS)
+			$(CC) $(CFLAGS) $()

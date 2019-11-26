@@ -18,7 +18,3 @@
 	path = rmw_fastrtps
 	url = https://github.com/ros2/rmw_fastrtps.git
 	branch = dashing
-[submodule "rcl_interfaces"]
-	path = rcl_interfaces
-	url = https://github.com/ros2/rcl_interfaces.git
-	branch = dashing

@@ -6,6 +6,7 @@
         "logging.h": "c",
         "common.h": "c",
         "init_options.h": "c",
-        "logging_macros.h": "c"
+        "logging_macros.h": "c",
+        "hash_map.h": "c"
     }
 }

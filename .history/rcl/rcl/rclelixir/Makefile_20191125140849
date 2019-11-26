@@ -1,0 +1,15 @@
+CC		= gcc
+TARGET	= init.so
+DEST	= ./lib
+ROOTDIR = ../../..
+RCLDIR	= ..
+SRCDIR	= ./nif_src
+CFLAGS  = -O3 -fpic -shared
+
+INCLUDE	= -I. -I /usr/lib/erlang/erts-10.5.2/include -I $(RCLDIR)/include -I $(ROOTDIR)/rcutils/include -I $(ROOTDIR)/rmw/rmw/include -I ../../../../rosidl/rosidl_generator_c/include -I ../../../../rosidl/rosidl_typesupport_interface/include -I ../../../../rmw_fastrtps/rmw_fastrtps_cpp/include -I ../../../..
+
+all:	$(TARGET)
+
+$(TARGET): 
+	$(CC) $(CFLAGS) $(INCLUDE) -o $(DEST)$(TARGET) $(SRCDIR)init_nif.c \
+	$

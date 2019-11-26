@@ -1,0 +1,9 @@
+CC	:= gcc
+TARGET	:= init.so
+DEST	:= ./lib
+ROOTDIR := /opt/ros/dashing
+RCLDIR	:= ..
+
+SRCDIR	:= ./nif_src
+CFLAGS  := -O3 -fpic -shared
+LINK := -lstdc++
