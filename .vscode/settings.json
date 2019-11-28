@@ -7,6 +7,9 @@
         "common.h": "c",
         "init_options.h": "c",
         "logging_macros.h": "c",
-        "hash_map.h": "c"
+        "hash_map.h": "c",
+        "*.ipp": "c",
+        "strdup.h": "c",
+        "msg_types.h": "c"
     }
 }
