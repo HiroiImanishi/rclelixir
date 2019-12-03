@@ -1,2 +1,3 @@
-.history/
+.history
+.vscode
 compile_command
