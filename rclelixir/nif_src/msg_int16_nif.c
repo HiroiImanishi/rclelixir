@@ -1,9 +1,10 @@
 #include <erl_nif.h>
+#include "../include/total_nif.h"
 #include "msg_types.h"
 #include <rosidl_generator_c/message_type_support_struct.h>
 #include "std_msgs/msg/int16__struct.h"
 //#include "/opt/ros/dashing/include/std_msgs/msg/int16__struct.h"
-
+/*
 ErlNifResourceType* rt_Int16;
 ErlNifResourceType* rt_msgtypesupport;
 //リソースタイプを作る．load()から呼び出される
@@ -33,7 +34,7 @@ static int reload(ErlNifEnv* env,void** priv,ERL_NIF_TERM load_info){
     if(open_resource(env) == -1) return -1;
     return 0;
 }
-
+*/
 ERL_NIF_TERM nif_init_Int16(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[]){
     if(argc != 0){
         return enif_make_badarg(env);
@@ -76,11 +77,12 @@ ERL_NIF_TERM nif_getmsgtype_Int16(ErlNifEnv* env, int argc, const ERL_NIF_TERM a
 
     return ret;
 }
-
+/*
 static ErlNifFunc nif_funcs[]={
     {"init_std_msgs_msg_Int16",0,nif_init_Int16},
     {"destroy_std_msgs_msg_Int16",1,nif_destroy_Int16},
     {"get_message_type_from_std_msgs_msg_Int16",0,nif_getmsgtype_Int16},
 }
 
-ERL_NIF_INIT(Elixir.Int16,nif_funcs,&load,&reload,NULL,NULL);
+static ERL_NIF_INIT(Elixir.Int16,nif_funcs,&load,&reload,NULL,NULL);
+*/

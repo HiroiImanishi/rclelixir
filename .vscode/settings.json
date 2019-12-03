@@ -10,6 +10,7 @@
         "hash_map.h": "c",
         "*.ipp": "c",
         "strdup.h": "c",
-        "msg_types.h": "c"
+        "msg_types.h": "c",
+        "erl_nif.h": "c"
     }
 }

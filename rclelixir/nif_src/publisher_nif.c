@@ -17,8 +17,7 @@ extern "C"
 {
 #endif
 #include <erl_nif.h>
-#include "rcl/publisher.h"
-
+#include "../include/total_nif.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -34,7 +33,7 @@ extern "C"
 //#include "./common.h"
 //#include "./publisher_impl.h"
 
-
+/*
 ErlNifResourceType* rt_pub;
 ErlNifResourceType* rt_pub_options;
 ErlNifResourceType* rt_ret;
@@ -83,7 +82,7 @@ static int reload(ErlNifEnv* env,void** priv,ERL_NIF_TERM load_info){
     if(open_resource(env) == -1) return -1;
     return 0;
 }
-
+*/
 //wrap関数その1
 ERL_NIF_TERM nif_rcl_get_zero_initialized_publisher(ErlNifEnv* env,int argc,const ERL_NIF_TERM argv[]){
     rcl_publisher_t* res;
@@ -284,7 +283,7 @@ ERL_NIF_TERM nif_rcl_publish(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[]
   
   return ret;
 }
-
+/*
 static ErlNifFunc nif_funcs[] = {
     {"rcl_get_zero_initialized_publisher",0,nif_rcl_get_zero_initialized_publisher},
     {"rcl_publisher_get_default_options",0,nif_rcl_publisher_get_default_options},
@@ -295,7 +294,8 @@ static ErlNifFunc nif_funcs[] = {
     {"rcl_publish",3,nif_rcl_publish},
 }
 
-ERL_NIF_INIT(Elixir.Publisher,nif_funcs,&load,&reload,NULL,NULL);
+static ERL_NIF_INIT(Elixir.Publisher,nif_funcs,&load,&reload,NULL,NULL);
+*/
 #ifdef __cplusplus
 }
 #endif
